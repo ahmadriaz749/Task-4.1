@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCA510"
+    tools:context="com.example.task4.Start_Workout">
+
+
+    <!-- TextView to display "Workout" -->
+    <TextView
+        android:id="@+id/work_out_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Workout"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- TextView to display the time remaining for the workout -->
+    <TextView
+        android:id="@+id/workout_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textSize="48sp"
+        android:layout_below="@+id/work_out_textview"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- EditText to set the duration of the workout -->
+    <EditText
+        android:id="@+id/workout_duration_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter workout duration in minutes"
+        android:inputType="number"
+        android:textSize="18sp"
+        android:layout_below="@+id/workout_time_text_view"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- TextView to display "Rest" -->
+    <TextView
+        android:id="@+id/rest_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rest"
+        android:textSize="24sp"
+        android:layout_below="@+id/workout_duration_edittext"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- TextView to display the time remaining for the rest period -->
+    <TextView
+        android:id="@+id/rest_time_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textSize="48sp"
+        android:layout_below="@+id/rest_text_view"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- EditText to set the duration of the rest period -->
+    <EditText
+        android:id="@+id/rest_duration_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter rest duration in minutes"
+        android:inputType="number"
+        android:textSize="18sp"
+        android:layout_below="@+id/rest_time_textview"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Button to start and stop the timer -->
+    <Button
+        android:id="@+id/start_stopbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:textSize="18sp"
+        android:layout_below="@+id/rest_duration_edittext"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- ProgressBar to show the progress of the current phase -->
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start_stopbutton"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

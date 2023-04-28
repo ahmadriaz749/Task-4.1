@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#FCA510">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FCA510"
+        tools:context="com.example.task4.MainActivity">
+
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:text="WorkOut Application"
+            android:textColor="@color/textColor"
+            android:textSize="32sp" />
+
+
+        <TextView
+            android:id="@+id/tv_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_text"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="Here are top 3 workout excerises"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_text2"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="30dp"
+                android:paddingBottom="20dp"
+                android:weightSum="3">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_tmp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="16dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="316dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="#FCA510">
+
+                        <ImageView
+                            android:id="@+id/iv_temp"
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/bicep"
+                            />
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="    Bicep"
+                            android:textColor="@color/textColor"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            //END Temo Layout
+
+
+            //Start Weight Layout
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="30dp"
+                android:paddingBottom="20dp"
+                android:weightSum="3">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="16dp">
+
+                    <LinearLayout
+                        android:layout_width="316dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="#FCA510">
+
+                        <ImageView
+                            android:id="@+id/iv_length"
+                            android:layout_width="148dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/chest" />
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="    Chest"
+                            android:textColor="@color/textColor"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            //End Length layout
+
+            //Start Weight Layout
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="30dp"
+                android:paddingBottom="20dp"
+                android:weightSum="3">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="16dp">
+
+                    <LinearLayout
+                        android:layout_width="316dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="#FCA510">
+
+                        <ImageView
+                            android:id="@+id/iv_weight"
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/shoulder" />
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="    Weight"
+                            android:textColor="@color/textColor"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            //End Weight Layout
+
+
+            </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>
